@@ -3,11 +3,7 @@ import BlogList from './BlogList';
 
 const Home = () => {
  
-
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
+  const useFetch = {}
 
   
   return (
@@ -18,7 +14,6 @@ const Home = () => {
         <BlogList
           blogs={blogs}
           title="All Blogs!"
-          handleDelete={handleDelete}
         />
       )}
     </div>
